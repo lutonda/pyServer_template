@@ -56,4 +56,4 @@ def signUp():
         conn.close()
 
 if __name__ == "__main__":
-    app.run(port=5000)
+    app.run(port=4500)
