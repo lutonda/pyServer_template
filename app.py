@@ -3,6 +3,8 @@ from flask.ext.mysql import MySQL
 #from flask_mysql import MySQL
 from werkzeug import generate_password_hash, check_password_hash
 
+from sqlalchemy import Column, DateTime, String, Integer, ForeignKey, func
+
 mysql = MySQL()
 app = Flask(__name__)
 
