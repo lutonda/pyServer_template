@@ -12,8 +12,6 @@ app.config['MYSQL_DATABASE_PASSWORD'] = 'start'
 app.config['MYSQL_DATABASE_DB'] = 'py'
 app.config['MYSQL_DATABASE_HOST'] = 'localhost'
 mysql.init_app(app)
-
-
 @app.route('/')
 def main():
     return render_template('index.html')
@@ -54,6 +52,5 @@ def signUp():
     finally:
         cursor.close() 
         conn.close()
-
 if __name__ == "__main__":
     app.run(port=4500)
